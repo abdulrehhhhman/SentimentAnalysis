@@ -4,34 +4,6 @@ import pickle
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Inject CSS for background image and styled container
-st.markdown(
-    """
-   <style>
-    .stApp {
-        background-image: url("https://miro.medium.com/v2/resize:fit:1400/0*-IruQ2gNoC7NeHwj");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    h1 {
-      color: #2E86C1 !important;
-    }
-    p {
-      color: orange !important;
-    }
-    div[data-testid="stForm"] {
-        background-color: black;
-        padding: 2rem;
-        border-radius: 15px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-    .form_submit_button {
-        color: white;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 # Load model and tokenizer
 @st.cache_resource
